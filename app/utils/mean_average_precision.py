@@ -5,7 +5,7 @@ from .intersection_over_union import intersection_over_union
 
 def mean_average_precision(pred_boxes,true_boxes,iou_threshold=0.5,box_format="corners",num_classes=20):
     #pred_boxes (list): [[train_idx,class_pred,prob_score,x1,y1,x2,y2],....]
-    average_predictions= []
+    average_precisions= []
     epsilon=1e-6
 
     for c in range(num_classes):
